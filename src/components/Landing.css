@@ -1,15 +1,134 @@
-#slider{
-    overflow: hidden;
+*{
+    margin: 0px;
 }
 
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    animation: 20s slider infinite;
+
+@keyframes slider {
+    0% {
+        left: 0%;
+
+    }
+
+    20% {
+        left: 0%;
+        
+    }
+
+    25% {
+        left: -100%;
+    }
+    
+    40% {
+        left: -100%;
+    }
+    
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    } 
+
+    100% {
+        left: -400%;
+    }
+}
+
+#slider {
+    overflow: hidden;
+ 
+
 }
 
 #slider figure img {
     width: 20%;
     float: left;
+    
 }
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0px;
+  
+    left: 0;
+    animation: 10s slider infinite
+}
+.container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    padding: 10px;
+   
+}
+
+li{
+    display: inline-block;
+    
+        text-decoration: none;
+        color: #fff;
+        font-family: comfortaa;
+        font-weight: lighter;
+        font-size: 16px;
+        padding: 0 20px;
+        list-style: none;
+    
+    }
+
+    li a {
+        text-decoration: none;
+        color: #252525;
+    }
+
+    .Link::after{
+        content: '';
+        display: block;
+        width:0;
+        height: 2px;
+        background: black;
+        transition: width 0.5s;
+        
+    }
+
+    .Link:hover::after {
+        width: 100%;
+        transition: width 0.5s;
+        
+    }
+
+  .logo {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      width: 15vw;
+      position: relative;
+  }
+
+  h1 {
+      
+  }
+  h2 {
+      margin: 2%;
+      display: flex;
+      content: inherit;
+  }
+
+  .b{
+      width: 7vw;
+      height: 13vh;
+      
+      
+  }
