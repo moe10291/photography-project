@@ -66,24 +66,17 @@
     left: 0;
     animation: 10s slider infinite
 }
-.container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    padding: 10px;
-   
-}
+
 
 li{
-    display: inline-block;
+    display: inline-flex;
     
         text-decoration: none;
         color: #fff;
-        font-family: comfortaa;
-        font-weight: lighter;
-        font-size: 16px;
-        padding: 0 20px;
+        font-family: ostrich sans;
+        font-weight: bold;
+        font-size: 24px;
+        padding: 0 25px;
         list-style: none;
     
     }
@@ -91,6 +84,7 @@ li{
     li a {
         text-decoration: none;
         color: #252525;
+       
     }
 
     .Link::after{
@@ -113,22 +107,137 @@ li{
       padding: 0;
       margin: 0;
       display: flex;
-      width: 15vw;
+      width: 0vw;
       position: relative;
+      justify-content: space-between;
+      
   }
 
   h1 {
-      
+      font-family: great vibes;
+      font-size: 58px;
+     display: inline-block;
+     margin-top: 10px;
+     color: #2D52A3;
   }
-  h2 {
+  .second {
       margin: 2%;
       display: flex;
       content: inherit;
+      padding-top: 4%;
+      font-family: great vibes;
+      font-size: 58px;
+      margin-left: 26px;
+      margin-top: 10px;
+      
+
+      
   }
 
   .b{
-      width: 7vw;
-      height: 13vh;
+      width: 3vw;
+      height: 6vh;
+      padding-left: 1.5vw;
+      padding-top: 1.5vh;
+  }
+
+  .menu{
+      display: flexbox;
+      position: relative;
+      justify-content: flex-end;
+     padding-left: 60vw;
+     margin-top: 4vh;
       
       
   }
+
+  .navbar {
+      height: 12vh;
+      display: flex;
+  }
+
+  .bardi {
+   
+    width: 450px;
+    height: 565px;
+    
+        
+  }
+
+  .aboutme {
+      display: flex;
+      flex-direction: row;
+      
+  }
+
+  .text {
+      padding: 10vh;
+      font-family: eb-garamond;
+      font-size: 18px;
+      line-height: 30px;
+      color: #6E6E6E;
+     
+      text-align: center;
+      background-color: #FAFAFA;
+  }
+
+  .about {
+      font-family: comfortaa;
+      display: flex;
+      align-content: center;
+  }
+
+  .Hello{
+      padding-bottom: 5vh;
+      font-size: 40px;
+      font-family: comfortaa;
+  }
+
+  #photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;  
+  }
+
+  #photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  @media (max-width: 1200px) {
+    #photos {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #photos {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #photos {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 400px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
+
+ 
