@@ -65,7 +65,17 @@ class Landing extends Component {
 
                 </div>
 
-               
+                <div className='wrapper'>
+                <div className="box one">1</div>
+                <div className="box two">2</div>
+                <div className="box three">3</div>
+                <div className="box four">4</div>
+                <div className="box five">5</div>
+                <div className="box six">6</div>
+                
+                </div>
+                
+           
             </div>
         )
     }

@@ -1,5 +1,7 @@
 *{
     margin: 0px;
+    padding: 0;
+    box-sizing: 0;
 }
 
 
@@ -193,51 +195,31 @@ li{
       font-family: comfortaa;
   }
 
-  #photos {
-    /* Prevent vertical gaps */
-    line-height: 0;
-     
-    -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;  
+  .wrapper{
+      display: grid;
+      background-color: peachpuff;
+      width: 900px;
+      max-width: 100%;
+      height: 80vh;
+      margin: 40px auto;
+      grid-gap: 5px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(6, 1fr);
   }
 
-  #photos img {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
+  .box{
+      background-color: palegreen;
   }
 
-  @media (max-width: 1200px) {
-    #photos {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
-    }
+  .box.one{
+      grid-column: span 3;
+      grid-row: span 3;
   }
-  @media (max-width: 1000px) {
-    #photos {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
-    }
+  .box.two{
+      grid-column: span 2;
+      grid-row: span 2;
   }
-  @media (max-width: 800px) {
-    #photos {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
-    }
+  .box.three{
+      grid-column:4/span 2;
+      grid-row: 1/span 3;
   }
-  @media (max-width: 400px) {
-    #photos {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
-    }
-  }
-
- 
