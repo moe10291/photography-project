@@ -8,6 +8,17 @@ import pho6 from '../pic-6.png'
 import photo from '../abc.jpg'
 import b from '../b.png'
 import baby from '../baby.jpg'
+import bw from '../bw.jpg'
+import bw2 from '../bw2.jpg'
+import bw3 from '../bw3.jpg'
+import small1 from '../small7.jpg'
+import small2 from '../small2.jpg'
+import small3 from '../small3.jpg'
+import small4 from '../pic4.png';
+import small5 from '../pic3.png';
+import small6 from '../small6.jpg';
+import small10 from '../small10.png';
+import small11 from '../small11.jpg';
 
 import './Landing.css';
 // import Nav from '../Nav'
@@ -66,12 +77,42 @@ class Landing extends Component {
                 </div>
 
                 <div className='wrapper'>
-                <div className="box one">1</div>
-                <div className="box two">2</div>
-                <div className="box three">3</div>
-                <div className="box four">4</div>
-                <div className="box five">5</div>
-                <div className="box six">6</div>
+                <div className="box one">
+                <img className='pic1' src={bw} alt='baby'/>
+                </div>
+                <div className="box two">
+                <img className='pic2' src={bw2} alt='baby'/>
+                </div>
+                
+                <div className="box three">
+                <img className='pic3' src={bw3} alt='baby'/>
+                </div>
+                <div className="box four">
+                <img className='pic4' src={small1} alt='baby'/>
+                </div>
+                <div className="box five">
+                <img className='pic5' src={small2} alt='baby'/>
+                </div>
+                <div className="box six">
+                <img className='pic6' src={small3} alt='baby'/>
+                </div>
+                <div className="box seven">
+                <img className='pic7' src={small4} alt='baby'/>
+                </div>
+                <div className="box eight">
+                <img className='pic8' src={small5} alt='baby'/>
+                </div>
+                <div className="box nine">
+                <img className='pic9' src={small6} alt='baby'/>
+                </div>
+                <div className="box ten">
+                <img className='pic10' src={small10} alt='baby'/>
+                </div>
+                <div className="box eleven">
+                <img className='pic11' src={small11} alt='baby'/>
+                </div>
+                
+                {/* <div className="box six">6</div> */}
                 
                 </div>
                 
