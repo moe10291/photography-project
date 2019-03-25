@@ -25,4 +25,6 @@ massive(CONNECTION_STRING)
     })
 });
 
+console.log('appear this');
+
         
